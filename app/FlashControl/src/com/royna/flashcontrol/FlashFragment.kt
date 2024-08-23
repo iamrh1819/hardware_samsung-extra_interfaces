@@ -64,7 +64,7 @@ class FlashFragment : PreferenceFragmentCompat(), OnMainSwitchChangeListener {
             if (e is NullPointerException) {
                  0
             } else if (e is IllegalStateException) {
-                 Log.e(TAG, e.message)
+                 Log.e(TAG, "IllegalStateException on getCurrentBrightness", e)
                  0
             } else {
                  throw e // rethrow if it's not one of the expected exceptions

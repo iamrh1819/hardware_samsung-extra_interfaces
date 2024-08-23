@@ -59,7 +59,7 @@ class FlashFragment : PreferenceFragmentCompat(), OnMainSwitchChangeListener {
         switchBar = findPreference<MainSwitchPreference>(PREF_FLASH_ENABLE)!!
         switchBar.addOnSwitchChangeListener(this)
                 val mBrightness = try {
-            mService.getCurrentBrightness()
+            mService!!.getCurrentBrightness()
         } catch (e : Exception) {
             if (e is NullPointerException) {
                  0

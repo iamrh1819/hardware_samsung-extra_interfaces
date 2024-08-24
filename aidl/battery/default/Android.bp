@@ -29,29 +29,6 @@ cc_binary {
     ],
     whole_static_libs: ["libhealthhalutils"],
     system_ext_specific: true,
-    ons.
-  11 changes: 10 additions & 1 deletion11  
-aidl/battery/default/Android.bp
-Original file line number	Diff line number	Diff line change
-@@ -10,6 +10,7 @@ cc_binary {
-    init_rc: ["vendor.samsung_ext.framework.battery-service.rc"],
-    vintf_fragments: ["vendor.samsung_ext.framework.battery-service.xml"],
-    srcs: [
-        "JSONParser.cpp",
-        "SmartCharge.cpp",
-        "service.cpp",
-    ],
-@@ -21,11 +22,19 @@ cc_binary {
-        "liblog",
-        "libutils",
-        "libsafestoi",
-        "libjsoncpp",
-        "android.hardware.health@2.0",
-        "android.hardware.health-V1-ndk",
-        "vendor.samsung_ext.framework.battery-V1-ndk",
-    ],
-    whole_static_libs: ["libhealthhalutils"],
-    system_ext_specific: true,
     required: ["smartcharge_nodes_json"],
 }
 

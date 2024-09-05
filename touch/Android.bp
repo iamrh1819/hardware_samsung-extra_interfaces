@@ -21,7 +21,7 @@ cc_binary {
     relative_install_path: "hw",
     // FIXME: this should be 'vendor: true' for modules that will eventually be
     // on AOSP.
-    vendor: true,
+    proprietary: true,
     local_include_dirs: ["include"],
     srcs: [
         "TouchscreenGesture.cpp",
